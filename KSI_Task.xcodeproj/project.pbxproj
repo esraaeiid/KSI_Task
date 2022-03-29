@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		023CD3AF27F2536C00068490 /* SpectialAndNewContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023CD3AE27F2536C00068490 /* SpectialAndNewContainerView.swift */; };
+		023CD3B127F2552B00068490 /* SeasonContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023CD3B027F2552B00068490 /* SeasonContainerView.swift */; };
+		026D3B5127F37B7D00B2E4EE /* String + StrikeThrough.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026D3B5027F37B7D00B2E4EE /* String + StrikeThrough.swift */; };
+		026D3B5327F383C000B2E4EE /* BodyCareContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026D3B5227F383C000B2E4EE /* BodyCareContainerView.swift */; };
+		026D3B5527F3870300B2E4EE /* TrendingContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026D3B5427F3870300B2E4EE /* TrendingContainerView.swift */; };
+		026D3B5727F387D600B2E4EE /* VitaminsContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026D3B5627F387D600B2E4EE /* VitaminsContainerView.swift */; };
+		026D3B5927F38AC100B2E4EE /* ProteinsAndSupplementsContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026D3B5827F38AC100B2E4EE /* ProteinsAndSupplementsContainerView.swift */; };
+		026D3B5B27F38C4800B2E4EE /* SoapContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026D3B5A27F38C4800B2E4EE /* SoapContainerView.swift */; };
+		026D3B5D27F38CD400B2E4EE /* MakeupContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026D3B5C27F38CD400B2E4EE /* MakeupContainerView.swift */; };
 		028BE86527F0ED7E007061E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028BE86427F0ED7E007061E6 /* AppDelegate.swift */; };
 		028BE86727F0ED7E007061E6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028BE86627F0ED7E007061E6 /* SceneDelegate.swift */; };
 		028BE86927F0ED7E007061E6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028BE86827F0ED7E007061E6 /* HomeViewController.swift */; };
@@ -24,9 +33,26 @@
 		028BE89027F10486007061E6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028BE88F27F10486007061E6 /* HomeView.swift */; };
 		028BE89227F10666007061E6 /* UIFont + Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028BE89127F10666007061E6 /* UIFont + Size.swift */; };
 		028BE89427F10AC0007061E6 /* UIView+UIStackView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028BE89327F10AC0007061E6 /* UIView+UIStackView+Constraints.swift */; };
+		028BE89827F13CAC007061E6 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028BE89727F13CAC007061E6 /* TabBarViewController.swift */; };
+		028BE89A27F19989007061E6 /* OffersCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028BE89927F19989007061E6 /* OffersCell.swift */; };
+		028BE89C27F19A28007061E6 /* CALayer + Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028BE89B27F19A28007061E6 /* CALayer + Shadow.swift */; };
+		028BE89E27F19D4F007061E6 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028BE89D27F19D4F007061E6 /* ProductCell.swift */; };
+		028BE8A027F19D62007061E6 /* BrandCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028BE89F27F19D62007061E6 /* BrandCell.swift */; };
+		028BE8A327F19EB9007061E6 /* HomeViewController + CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028BE8A227F19EB9007061E6 /* HomeViewController + CollectionView.swift */; };
+		028BE8A927F1CC91007061E6 /* MainSectionContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028BE8A827F1CC91007061E6 /* MainSectionContainerView.swift */; };
+		028BE8AB27F1D008007061E6 /* MonthOffersContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028BE8AA27F1D008007061E6 /* MonthOffersContainerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		023CD3AE27F2536C00068490 /* SpectialAndNewContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpectialAndNewContainerView.swift; sourceTree = "<group>"; };
+		023CD3B027F2552B00068490 /* SeasonContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonContainerView.swift; sourceTree = "<group>"; };
+		026D3B5027F37B7D00B2E4EE /* String + StrikeThrough.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + StrikeThrough.swift"; sourceTree = "<group>"; };
+		026D3B5227F383C000B2E4EE /* BodyCareContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyCareContainerView.swift; sourceTree = "<group>"; };
+		026D3B5427F3870300B2E4EE /* TrendingContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingContainerView.swift; sourceTree = "<group>"; };
+		026D3B5627F387D600B2E4EE /* VitaminsContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VitaminsContainerView.swift; sourceTree = "<group>"; };
+		026D3B5827F38AC100B2E4EE /* ProteinsAndSupplementsContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProteinsAndSupplementsContainerView.swift; sourceTree = "<group>"; };
+		026D3B5A27F38C4800B2E4EE /* SoapContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoapContainerView.swift; sourceTree = "<group>"; };
+		026D3B5C27F38CD400B2E4EE /* MakeupContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeupContainerView.swift; sourceTree = "<group>"; };
 		028BE86127F0ED7D007061E6 /* KSI_Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KSI_Task.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		028BE86427F0ED7E007061E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		028BE86627F0ED7E007061E6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -46,6 +72,14 @@
 		028BE88F27F10486007061E6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		028BE89127F10666007061E6 /* UIFont + Size.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont + Size.swift"; sourceTree = "<group>"; };
 		028BE89327F10AC0007061E6 /* UIView+UIStackView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+UIStackView+Constraints.swift"; sourceTree = "<group>"; };
+		028BE89727F13CAC007061E6 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		028BE89927F19989007061E6 /* OffersCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersCell.swift; sourceTree = "<group>"; };
+		028BE89B27F19A28007061E6 /* CALayer + Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer + Shadow.swift"; sourceTree = "<group>"; };
+		028BE89D27F19D4F007061E6 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		028BE89F27F19D62007061E6 /* BrandCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandCell.swift; sourceTree = "<group>"; };
+		028BE8A227F19EB9007061E6 /* HomeViewController + CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController + CollectionView.swift"; sourceTree = "<group>"; };
+		028BE8A827F1CC91007061E6 /* MainSectionContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSectionContainerView.swift; sourceTree = "<group>"; };
+		028BE8AA27F1D008007061E6 /* MonthOffersContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthOffersContainerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +136,10 @@
 		028BE87B27F0FAA3007061E6 /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
+				028BE8A727F1CC38007061E6 /* Views */,
+				028BE8A127F19D70007061E6 /* Collection Views */,
+				028BE89627F13C7A007061E6 /* Tab bar */,
+				028BE89527F12695007061E6 /* Cells */,
 				028BE86827F0ED7E007061E6 /* HomeViewController.swift */,
 				028BE88F27F10486007061E6 /* HomeView.swift */,
 			);
@@ -121,6 +159,8 @@
 			children = (
 				028BE89127F10666007061E6 /* UIFont + Size.swift */,
 				028BE89327F10AC0007061E6 /* UIView+UIStackView+Constraints.swift */,
+				028BE89B27F19A28007061E6 /* CALayer + Shadow.swift */,
+				026D3B5027F37B7D00B2E4EE /* String + StrikeThrough.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -138,6 +178,49 @@
 				028BE88327F102EE007061E6 /* Cairo-SemiBold.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		028BE89527F12695007061E6 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				028BE89927F19989007061E6 /* OffersCell.swift */,
+				028BE89D27F19D4F007061E6 /* ProductCell.swift */,
+				028BE89F27F19D62007061E6 /* BrandCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		028BE89627F13C7A007061E6 /* Tab bar */ = {
+			isa = PBXGroup;
+			children = (
+				028BE89727F13CAC007061E6 /* TabBarViewController.swift */,
+			);
+			path = "Tab bar";
+			sourceTree = "<group>";
+		};
+		028BE8A127F19D70007061E6 /* Collection Views */ = {
+			isa = PBXGroup;
+			children = (
+				028BE8A227F19EB9007061E6 /* HomeViewController + CollectionView.swift */,
+			);
+			path = "Collection Views";
+			sourceTree = "<group>";
+		};
+		028BE8A727F1CC38007061E6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				028BE8A827F1CC91007061E6 /* MainSectionContainerView.swift */,
+				028BE8AA27F1D008007061E6 /* MonthOffersContainerView.swift */,
+				023CD3AE27F2536C00068490 /* SpectialAndNewContainerView.swift */,
+				023CD3B027F2552B00068490 /* SeasonContainerView.swift */,
+				026D3B5227F383C000B2E4EE /* BodyCareContainerView.swift */,
+				026D3B5427F3870300B2E4EE /* TrendingContainerView.swift */,
+				026D3B5627F387D600B2E4EE /* VitaminsContainerView.swift */,
+				026D3B5827F38AC100B2E4EE /* ProteinsAndSupplementsContainerView.swift */,
+				026D3B5A27F38C4800B2E4EE /* SoapContainerView.swift */,
+				026D3B5C27F38CD400B2E4EE /* MakeupContainerView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,13 +301,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				026D3B5B27F38C4800B2E4EE /* SoapContainerView.swift in Sources */,
+				028BE89A27F19989007061E6 /* OffersCell.swift in Sources */,
+				028BE89E27F19D4F007061E6 /* ProductCell.swift in Sources */,
+				028BE89827F13CAC007061E6 /* TabBarViewController.swift in Sources */,
+				026D3B5927F38AC100B2E4EE /* ProteinsAndSupplementsContainerView.swift in Sources */,
+				026D3B5D27F38CD400B2E4EE /* MakeupContainerView.swift in Sources */,
 				028BE86927F0ED7E007061E6 /* HomeViewController.swift in Sources */,
+				026D3B5727F387D600B2E4EE /* VitaminsContainerView.swift in Sources */,
+				023CD3AF27F2536C00068490 /* SpectialAndNewContainerView.swift in Sources */,
 				028BE89227F10666007061E6 /* UIFont + Size.swift in Sources */,
+				028BE8A027F19D62007061E6 /* BrandCell.swift in Sources */,
+				028BE8A927F1CC91007061E6 /* MainSectionContainerView.swift in Sources */,
 				028BE86527F0ED7E007061E6 /* AppDelegate.swift in Sources */,
+				028BE89C27F19A28007061E6 /* CALayer + Shadow.swift in Sources */,
+				026D3B5327F383C000B2E4EE /* BodyCareContainerView.swift in Sources */,
 				028BE86727F0ED7E007061E6 /* SceneDelegate.swift in Sources */,
+				028BE8A327F19EB9007061E6 /* HomeViewController + CollectionView.swift in Sources */,
 				028BE89027F10486007061E6 /* HomeView.swift in Sources */,
+				028BE8AB27F1D008007061E6 /* MonthOffersContainerView.swift in Sources */,
+				026D3B5127F37B7D00B2E4EE /* String + StrikeThrough.swift in Sources */,
+				023CD3B127F2552B00068490 /* SeasonContainerView.swift in Sources */,
 				028BE87927F0EF6C007061E6 /* Model.swift in Sources */,
 				028BE89427F10AC0007061E6 /* UIView+UIStackView+Constraints.swift in Sources */,
+				026D3B5527F3870300B2E4EE /* TrendingContainerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -19,10 +19,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
 
         let window = UIWindow(windowScene: windowScene)
-        let mainController = HomeViewController()
-        let navigationController = UINavigationController(rootViewController: mainController)
-        navigationController.navigationBar.isTranslucent = false
-        window.rootViewController = navigationController
+        let mainController = TabBarViewController()
+//        let navigationController = UINavigationController(rootViewController: mainController)
+//        navigationController.navigationBar.isTranslucent = false
+        window.rootViewController = mainController
         self.window = window
         window.makeKeyAndVisible()
     }
