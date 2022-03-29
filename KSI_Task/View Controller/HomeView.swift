@@ -51,12 +51,11 @@ class HomeView: UIView {
      as stackView adjust its properities when view inside of it set to hidden */
 
     var collectionViewsStackView: UIStackView = {
-       var containerView = UIStackView()
-        containerView.axis = .vertical
-        containerView.spacing = 0
-        containerView.distribution = .fill
-        containerView.backgroundColor = .lightGray
-        return containerView
+       var stackView = UIStackView()
+        stackView.axis = .vertical
+        stackView.spacing = 0
+        stackView.distribution = .fill
+        return stackView
     }()
 
     //MARK: - Main Section Offers
