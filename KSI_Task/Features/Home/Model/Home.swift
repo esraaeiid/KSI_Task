@@ -25,12 +25,13 @@ struct HomeDetails: Codable {
 // MARK: - Banner
 
 struct Banner: Codable {
-    let type: TypeEnum
+    let type: SectionType
     let content: Content
 }
 
 // MARK: - Content
 struct Content: Codable {
+
     let backgroundImage: String?
     let backgroundFocusPoint: String?
     let backgroundColor: Color?
@@ -107,7 +108,7 @@ enum SaleType: String, Codable {
     case percent = "percent"
 }
 
-enum TypeEnum: String, Codable {
+enum SectionType: String, Codable {
     case brandsSlider = "brandsSlider"
     case categoryCover = "categoryCover"
     case categoryProductsSlider = "categoryProductsSlider"
@@ -137,3 +138,5 @@ struct Update: Codable {
     let forceUpdate: Bool
     let forceUpdateMessage: String
 }
+
+

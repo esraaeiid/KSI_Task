@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Nuke
 
 class ProductCell: UICollectionViewCell {
 
@@ -244,6 +245,14 @@ class ProductCell: UICollectionViewCell {
         }
 
 
+
+    func updateProductDetails(product: Block){
+        let url = product.blockImage ??  ""
+        if let URL = URL.init(string: url)  {
+            let request = ImageRequest(url: URL )
+            Nuke.loadImage(with: request, into: productImageView)
+        }
+    }
 
     }
 

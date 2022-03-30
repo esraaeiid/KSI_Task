@@ -32,6 +32,8 @@ class MonthOffersContainerView: UIView {
         return label
     }()
 
+ 
+
      var monthOffersCollectionView: UICollectionView =  {
          let flowLayout = UICollectionViewFlowLayout()
         flowLayout.scrollDirection = .horizontal

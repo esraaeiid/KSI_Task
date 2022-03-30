@@ -33,7 +33,6 @@ extension HomeViewController {
                 onCompleted: {
                    print("Completed event.")
                 }).disposed(by: disposeBag)
-
         }
 
 

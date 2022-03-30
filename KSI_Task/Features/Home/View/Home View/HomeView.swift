@@ -58,20 +58,31 @@ class HomeView: UIView {
         return stackView
     }()
 
-   lazy var bannersCollectionView: UICollectionView =  {
-         let flowLayout = UICollectionViewFlowLayout()
-        flowLayout.scrollDirection = .vertical
-        flowLayout.minimumLineSpacing = 12
-        flowLayout.minimumInteritemSpacing = 0
-        flowLayout.sectionInset = UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 16)
+//   lazy var bannersCollectionView: UICollectionView =  {
+//         let flowLayout = UICollectionViewFlowLayout()
+//        flowLayout.scrollDirection = .vertical
+//        flowLayout.minimumLineSpacing = 12
+//        flowLayout.minimumInteritemSpacing = 0
+//        flowLayout.sectionInset = UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 16)
+//
+//        let collectionView = UICollectionView(frame: bounds, collectionViewLayout: UICollectionViewFlowLayout.init())
+//        collectionView.collectionViewLayout = flowLayout
+//        collectionView.isUserInteractionEnabled = true
+//        collectionView.backgroundColor = .clear
+//        collectionView.isScrollEnabled = true
+//        return collectionView
+//     }()
 
-        let collectionView = UICollectionView(frame: bounds, collectionViewLayout: UICollectionViewFlowLayout.init())
-        collectionView.collectionViewLayout = flowLayout
-        collectionView.isUserInteractionEnabled = true
-        collectionView.backgroundColor = .clear
-        collectionView.isScrollEnabled = true
-        return collectionView
-     }()
+    let bannerstableView: UITableView = {
+        let tableView = UITableView()
+        tableView.separatorStyle = .none
+        tableView.showsVerticalScrollIndicator = true
+        tableView.bounces = true
+        tableView.backgroundColor = .clear
+        return tableView
+    }()
+
+
 
     //MARK: - Main Section Offers
 
@@ -484,8 +495,8 @@ class HomeView: UIView {
                          trailing: trailingAnchor,
                          padding: .init(top: 0, left: 0, bottom: 0, right: 0))
 
-        scrollView.addSubview(bannersCollectionView)
-        bannersCollectionView.anchor(top: searchBar.bottomAnchor,
+        scrollView.addSubview(bannerstableView)
+        bannerstableView.anchor(top: searchBar.bottomAnchor,
                                         leading: leadingAnchor,
                                         bottom:  bottomAnchor,
                                         trailing: trailingAnchor,
