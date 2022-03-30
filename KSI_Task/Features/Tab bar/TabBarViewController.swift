@@ -34,9 +34,9 @@ class TabBarViewController: UITabBarController {
         for i in 0..<items.count {
             items[i].image = UIImage(systemName: imagesOfTabBer[i])
             items[i].selectedImage = UIImage(systemName: imagesOnSelection[i])
-
         }
         self.selectedIndex = 2
+        self.tabBar.tintColor = UIColor(named: "orange_home")
     }
 
 

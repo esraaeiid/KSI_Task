@@ -12,17 +12,18 @@ import RxCocoa
 
 class HomeViewController: UIViewController {
 
+    //MARK: - Properities
+
     let homeView = HomeView()
     let viewModel: HomeViewModel = .init()
     let disposeBag = DisposeBag()
 
+    //MARK: - View lifeCycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        self.navigationController?.navigationBar.barTintColor = UIColor(named: "brown_home")
-        self.view.backgroundColor = .white
-        self.navigationController?.topViewController?.navigationItem.rightBarButtonItem = UIBarButtonItem(customView: homeView.navigationTitleLabel)
+
+        setupNavaigationController()
         getHomeDetails()
         setupSearchBar()
         setupScrollView()
@@ -34,10 +35,22 @@ class HomeViewController: UIViewController {
         self.view = homeView
     }
 
+//MARK: - aetup NavigationController
+
+    func setupNavaigationController(){
+        self.navigationController?.navigationBar.barTintColor = UIColor(named: "brown_home")
+        self.view.backgroundColor = .white
+        self.navigationController?.topViewController?.navigationItem.rightBarButtonItem = UIBarButtonItem(customView: homeView.navigationTitleLabel)
+    }
+
+
+//MARK: - get HomeDetails
+
     func getHomeDetails(){
         viewModel.getHomeDetails()
     }
 
+    //MARK: - Bind ViewModel
     func bindViewModel(){
         viewModel.viewModelUpdates.subscribe( onNext: { viewUpdates in
             switch viewUpdates {
@@ -56,7 +69,7 @@ class HomeViewController: UIViewController {
     }
 
 
-
+//MARK: - setup searchBar
     func setupSearchBar(){
         homeView.searchBar.searchBarStyle = .default
         homeView.searchBar.placeholder = "هل تبحث عن منتج؟"
@@ -67,6 +80,8 @@ class HomeViewController: UIViewController {
         homeView.searchBar.delegate = self
     }
 
+    //MARK: - setup scrollView
+    
     func setupScrollView(){
         homeView.scrollView.delegate = self
         homeView.scrollView.contentSize = CGSize(width: 1200,
@@ -85,6 +100,7 @@ class HomeViewController: UIViewController {
 
 }
 
+//MARK: - UISearchBarDelegate
 extension HomeViewController: UISearchBarDelegate { }
 
 extension HomeViewController: UIScrollViewDelegate {

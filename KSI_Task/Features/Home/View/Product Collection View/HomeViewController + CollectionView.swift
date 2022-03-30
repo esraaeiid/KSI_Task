@@ -20,27 +20,6 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout, UICollectionVi
 
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-
-//        let type = viewModel.banners[section].content.type ?? SectionType.categoryProductsSlider.rawValue
-//
-//        if  type == SectionType.main.rawValue {
-//            return viewModel.banners[section].content.blocks?.count ?? 0
-//
-//        } else if type == SectionType.categoryProductsSlider.rawValue {
-//            return viewModel.banners[section].content.products?.count ?? 0
-//
-//        } else if type == SectionType.productsCover.rawValue {
-//            return viewModel.banners[section].content.products?.count ?? 0
-//
-//        } else if type == SectionType.brandsSlider.rawValue {
-//            return viewModel.banners[section].content.brands?.count ?? 0
-//
-//        } else if type == SectionType.categoryCover.rawValue {
-//            return viewModel.banners[section].content.blocks?.count ?? 0
-//
-//        } else {
-//            return viewModel.banners[section].content.products?.count ?? 0
-//        }
         return viewModel.banners[section].content.blocks?.count ?? 0
     }
 
@@ -58,6 +37,7 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout, UICollectionVi
             let product = viewModel.banners[indexPath.section].content.blocks?[indexPath.row]
             if let product = product {
                 cell.updateProductDetails(product: product)
+                cell.setBeforeDiscountPrice(price: "24.0", currency: "ر.س")
             }
 
             return cell
@@ -69,7 +49,6 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout, UICollectionVi
                 return UICollectionViewCell()
             }
 
-            let product = viewModel.banners[indexPath.section].content.products?[indexPath.row]
             return cell
 
         case .categoryCover:
@@ -79,7 +58,6 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout, UICollectionVi
                 return UICollectionViewCell()
             }
 
-            let product = viewModel.banners[indexPath.section].content.products?[indexPath.row]
             return cell
 
         case .categoryProductsSlider:
@@ -88,11 +66,6 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout, UICollectionVi
                 assertionFailure("Can't load ProductCell")
                 return UICollectionViewCell()
             }
-
-            let product = viewModel.banners[indexPath.section].content.products?[indexPath.row]
-
-
-
             return cell
 
         case .productsCover:
@@ -101,8 +74,6 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout, UICollectionVi
                 assertionFailure("Can't load ProductCell")
                 return UICollectionViewCell()
             }
-
-            let product = viewModel.banners[indexPath.section].content.products?[indexPath.row]
             return cell
 
         case .none:

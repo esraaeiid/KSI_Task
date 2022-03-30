@@ -15,8 +15,7 @@ class BannerCell: UITableViewCell {
     static let BannerCellID = "BannerCellID"
 
 
-        // MARK: - Initializer
-
+    // MARK: - Initializer
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -24,15 +23,12 @@ class BannerCell: UITableViewCell {
         setupViews()
     }
 
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
 
-        required init?(coder aDecoder: NSCoder) {
-            super.init(coder: aDecoder)
+    }
 
-        }
-
-
-
-        // MARK: - Properties
+    // MARK: - Properties
 
     let titleLabel: UILabel = {
         let label = UILabel()
@@ -67,7 +63,7 @@ class BannerCell: UITableViewCell {
 
 
 
-        // MARK: - setup views properties
+    // MARK: - setup views properties
 
         func setupViews() {
             contentView.addSubview(titleLabel)
@@ -97,6 +93,7 @@ class BannerCell: UITableViewCell {
         productCollectionView.register(ProductCell.self, forCellWithReuseIdentifier: ProductCell.ProductCellID)
     }
 
+    //MARK: - update title
 
     func updateTitle(banner: Banner){
         if let heading = banner.content.heading {
@@ -104,6 +101,7 @@ class BannerCell: UITableViewCell {
         }
     }
 
+    //MARK: - update cell data
     func updateCellData(indexPath: IndexPath, content: Content){
 
         productCollectionView.reloadData()

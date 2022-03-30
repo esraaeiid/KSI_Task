@@ -139,7 +139,8 @@ class ProductCell: UICollectionViewCell {
         return label
     }()
 
-
+//MARK: - set Before Discount Price
+    
     func setBeforeDiscountPrice(price: String, currency: String){
         let priceStrikeThrough = price.strikeThrough()
         let currencyAttributedString  = NSMutableAttributedString(string: " " + currency)
@@ -150,6 +151,16 @@ class ProductCell: UICollectionViewCell {
         combination.append(currencyAttributedString)
         priceBeforeDiscountLabel.attributedText = combination
 
+    }
+
+//MARK: - update Product Details
+
+    func updateProductDetails(product: Block){
+        let url = product.blockImage ??  ""
+        if let URL = URL.init(string: url)  {
+            let request = ImageRequest(url: URL )
+            Nuke.loadImage(with: request, into: productImageView)
+        }
     }
 
 
@@ -244,15 +255,6 @@ class ProductCell: UICollectionViewCell {
 
         }
 
-
-
-    func updateProductDetails(product: Block){
-        let url = product.blockImage ??  ""
-        if let URL = URL.init(string: url)  {
-            let request = ImageRequest(url: URL )
-            Nuke.loadImage(with: request, into: productImageView)
-        }
-    }
 
     }
 
