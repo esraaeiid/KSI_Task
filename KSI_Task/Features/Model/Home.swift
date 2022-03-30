@@ -7,20 +7,23 @@
 
 import Foundation
 
-// MARK: - Welcome
-struct Welcome: Codable {
+// MARK: - Home
+
+struct Home: Codable {
     let status: Status
-    let data: DataClass
+    let data: HomeDetails
 }
 
 // MARK: - DataClass
-struct DataClass: Codable {
+
+struct HomeDetails: Codable {
     let popupAd: PopupAd
     let meta: Meta
     let banners: [Banner]
 }
 
 // MARK: - Banner
+
 struct Banner: Codable {
     let type: TypeEnum
     let content: Content
@@ -81,30 +84,23 @@ struct Variant: Codable {
     let minQty, maxQty, weight: Int
     let dateAdded: String
     let onSale: Bool
-    let currency: Currency
+    let currency: String
     let price, salePrice, saleAmount: Double
     let saleType: SaleType?
     let bestSeller: Bool
-    let badge: Badge
+    let badge: String
     let badgeTextColor: Color
     let badgeBackground: BadgeBackground
 }
 
-enum Badge: String, Codable {
-    case empty = ""
-//    case عرض = "عرض"
-//    case وصلحالا = "وصل حالاً"
-}
+
 
 enum BadgeBackground: String, Codable {
     case empty = ""
     case the050505 = "#050505"
 }
 
-enum Currency: String, Codable {
-//    case رس = "ر.س"
-    case rs = "rs"
-}
+
 
 enum SaleType: String, Codable {
     case empty = ""
@@ -120,13 +116,13 @@ enum TypeEnum: String, Codable {
 }
 
 // MARK: - Meta
+
 struct Meta: Codable {
     let pageNumber, pageLimit, totalPages: Int
 }
 
 // MARK: - PopupAd
-struct PopupAd: Codable {
-}
+struct PopupAd: Codable {}
 
 // MARK: - Status
 struct Status: Codable {
