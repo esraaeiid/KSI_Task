@@ -11,14 +11,17 @@ import RxSwift
 
 extension HomeViewController {
 
-
-
     class HomeViewModel {
+
+        //MARK: - Properities
+        
         let service = ProductsRequest.init()
         var banners: [Banner] = []
         let disposeBag = DisposeBag()
-
         var viewModelUpdates: PublishSubject<ViewModelUpdates> = .init()
+
+        
+        //MARK: - get HomeDetails
 
         func getHomeDetails(){
             let result : Observable<[Banner]> = self.service.send()
@@ -28,12 +31,11 @@ extension HomeViewController {
                     self.viewModelUpdates.onNext(.fetchedHomeDetails)
                 },
                 onError: { error in
-                   print(error.localizedDescription)
+                    print(error.localizedDescription)
                 },
                 onCompleted: {
-                   print("Completed event.")
+                    print("Completed event.")
                 }).disposed(by: disposeBag)
-
         }
 
 
@@ -41,6 +43,7 @@ extension HomeViewController {
 
 }
 
+//MARK: - ViewModel Updates
 extension HomeViewController.HomeViewModel {
     enum ViewModelUpdates {
         case fetchedHomeDetails
