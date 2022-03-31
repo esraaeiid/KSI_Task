@@ -58,20 +58,6 @@ class HomeView: UIView {
         return stackView
     }()
 
-//   lazy var bannersCollectionView: UICollectionView =  {
-//         let flowLayout = UICollectionViewFlowLayout()
-//        flowLayout.scrollDirection = .vertical
-//        flowLayout.minimumLineSpacing = 12
-//        flowLayout.minimumInteritemSpacing = 0
-//        flowLayout.sectionInset = UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 16)
-//
-//        let collectionView = UICollectionView(frame: bounds, collectionViewLayout: UICollectionViewFlowLayout.init())
-//        collectionView.collectionViewLayout = flowLayout
-//        collectionView.isUserInteractionEnabled = true
-//        collectionView.backgroundColor = .clear
-//        collectionView.isScrollEnabled = true
-//        return collectionView
-//     }()
 
     let bannerstableView: UITableView = {
         let tableView = UITableView()
@@ -82,54 +68,6 @@ class HomeView: UIView {
         return tableView
     }()
 
-
-
-    //MARK: - Main Section Offers
-
-    let mainSectionContainerView = MainSectionContainerView()
-
-
-    //MARK: - Month Offers Section
-
-    let monthOffersContainerView = MonthOffersContainerView()
-
-
-    //MARK: - Spectial and New Items Section
-
-    var spectialAndNewContainerView = SpectialAndNewContainerView()
-
-
-    //MARK: - End Of Season Offers Section
-
-    var seasonContainerView = SeasonContainerView()
-
-
-    //MARK: - Body Care Section
-
-    var bodyCareContainerView = BodyCareContainerView()
-
-    //MARK: - Trending Items Section
-
-    var trendingContainerView = TrendingContainerView()
-
-
-    //MARK: - Vitamins Section
-
-    var vitaminsContainerView = VitaminsContainerView()
-
-
-    //MARK: - Proteins and Supplements Section
-
-    var proteinsAndSupplementsContainerView = ProteinsAndSupplementsContainerView()
-
-
-    //MARK: - Soaps Section
-
-    var soapContainerView = SoapContainerView()
-
-    //MARK: - Makeup Section
-
-    var makeupContainerView = MakeupContainerView()
 
 
     //MARK: - Gluten Free Section
@@ -501,100 +439,6 @@ class HomeView: UIView {
                                         bottom:  bottomAnchor,
                                         trailing: trailingAnchor,
                                         padding: .init(top: 0, left: 0, bottom: 0, right: 0))
-
-//        scrollView.addSubview(collectionViewsStackView)
-//        collectionViewsStackView.anchor(top: searchBar.bottomAnchor,
-//                         leading: leadingAnchor,
-//                         bottom:  nil,
-//                         trailing: trailingAnchor,
-//                         padding: .init(top: 0, left: 0, bottom: 0, right: 0))
-//
-//        collectionViewsStackView.addArrangedSubviews([mainSectionContainerView,
-//                                                      monthOffersContainerView,
-//                                                      spectialAndNewContainerView,
-//                                                      seasonContainerView,
-//                                                      bodyCareContainerView,
-//                                                      trendingContainerView,
-//                                                     vitaminsContainerView,
-//                                                      proteinsAndSupplementsContainerView,
-//                                                     soapContainerView,
-//                                                      makeupContainerView,
-//
-//                                                     glutenFreeCollectionView,
-//                                                     hairCareImageView,
-//                                                     driedFruitCollectionView,
-//                                                     turkishCoffeeImageView,
-//                                                     scentedCandlesCollectionView,
-//                                                     turkishSpicesImageView,
-//                                                      turkishBaklavaCollectionView,
-//                                                     turkishNutsImageView,
-//                                                      coffeeTeaMachinesCollectionView,
-//                                                      turkishDividerImageView,
-//                                                      masksCollectionView,
-//                                                     herbalTeaCollectionView,
-//                                                     buyingOffersCollectionView,
-//                                                     kitchenToolsImageView,
-//                                                     dietProductsCollectionView,
-//                                                     brandingCollectionView])
-//
-//
-//        mainSectionContainerView.constrainHeight(constant: 300)
-//        monthOffersContainerView.constrainHeight(constant: 300)
-//        spectialAndNewContainerView.constrainHeight(constant: 300)
-//        seasonContainerView.constrainHeight(constant: 300)
-//        bodyCareContainerView.constrainHeight(constant: 400)
-//
-//
-//        trendingContainerView.constrainHeight(constant: 300)
-//        vitaminsContainerView.constrainHeight(constant: 300)
-//
-//        proteinsAndSupplementsContainerView.constrainHeight(constant: 400)
-//
-//        soapContainerView.constrainHeight(constant: 300)
-//        makeupContainerView.constrainHeight(constant: 400)
-//
-//
-//        glutenFreeCollectionView.constrainHeight(constant: 300)
-//
-//
-//        hairCareImageView.constrainHeight(constant: 200)
-//
-//        driedFruitCollectionView.constrainHeight(constant: 300)
-//
-//
-//        turkishCoffeeImageView.constrainHeight(constant: 200)
-//
-//
-//        scentedCandlesCollectionView.constrainHeight(constant: 300)
-//
-//
-//        turkishSpicesImageView.constrainHeight(constant: 200)
-//
-//        turkishBaklavaCollectionView.constrainHeight(constant: 300)
-//
-//
-//        turkishNutsImageView.constrainHeight(constant: 200)
-//
-//
-//        coffeeTeaMachinesCollectionView.constrainHeight(constant: 300)
-//
-//
-//        turkishDividerImageView.constrainHeight(constant: 200)
-//
-//
-//        masksCollectionView.constrainHeight(constant: 300)
-//
-//
-//        herbalTeaCollectionView.constrainHeight(constant: 300)
-//
-//        buyingOffersCollectionView.constrainHeight(constant: 300)
-//
-//        kitchenToolsImageView.constrainHeight(constant: 200)
-//
-//        dietProductsCollectionView.constrainHeight(constant: 300)
-//
-//        brandingCollectionView.constrainHeight(constant: 250)
-
 
     }
 
